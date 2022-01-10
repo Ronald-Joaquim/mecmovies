@@ -1,0 +1,29 @@
+header{
+ background-color: var(--color-primary);
+ height: 60px;
+ align-items: center;
+}
+
+.mecmovies-nav-content{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ color: #fff;
+}
+
+.mecmovies-nav-content h1{
+ margin: 14px 0 0 0;
+ font-weight: 700;
+ font-size: 24px;
+}
+
+.mecmovies-contact-container{
+ margin: 18px 0 0 0;
+ display: flex;
+ align-items: center;
+}
+
+.mecmovies-contact-link{
+ margin: 0 0 0 10px;
+ font-size: 12px;
+}
