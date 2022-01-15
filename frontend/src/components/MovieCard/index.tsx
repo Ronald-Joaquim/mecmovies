@@ -14,7 +14,7 @@ function MovieCard( { movie } : Props) {
             <img className="mecmovie-movie-card-image" src={movie.image} alt={movie.title} />
             <div className="mecmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
-                <MovieScore />
+                <MovieScore count={movie.count} score={movie.score}/>
                 
                 <Link to={`/form/${movie.id}`}>
                 <div className="btn btn-primary mecmovie-btn">Avaliar</div>

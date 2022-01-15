@@ -1,14 +1,18 @@
 import MovieStars from "components/MovieStars";
 import './styles.css';
-function MovieScore() {
 
-    const score = 3.7;
-    const count = 14;
+type Props ={
+    score: number;
+    count: number;
+}
+
+function MovieScore( {score, count} : Props) {
+
 
     return (
         <div className="mecmovie-score-container">
             <p className="mecmovie-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
-            <MovieStars />
+            <MovieStars score={score} />
             <p className="mecmovie-score-count">{count} avaliações</p>
         </div>
     )
